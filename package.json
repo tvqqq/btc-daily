@@ -1,0 +1,22 @@
+{
+  "name": "btc-daily",
+  "version": "1.0.0",
+  "description": "Update the price of Bitcoin everyday.",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvqqq/btc-daily.git"
+  },
+  "author": "Quyen Tat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tvqqq/btc-daily/issues"
+  },
+  "homepage": "https://github.com/tvqqq/btc-daily#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
