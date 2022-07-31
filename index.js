@@ -28,7 +28,7 @@ const generate = async () => {
 
   if (!price) return;
 
-  fs.appendFileSync("README.md", `| ${today} | ${price} |`);
+  fs.appendFileSync("README.md", `\r\n| ${today} | ${price} |`);
 };
 
 generate();
