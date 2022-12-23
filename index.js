@@ -8,10 +8,11 @@ const getPrice = async () => {
       "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
     );
     const data = await response.json();
+    console.log("data", data);
     const price = parseFloat(data.price).toFixed(2);
 
-    console.log("today", today);
-    console.log("price", price);
+    // console.log("today", today);
+    // console.log("price", price);
 
     return {
       today,
