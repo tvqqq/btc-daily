@@ -5,7 +5,7 @@ const getPrice = async () => {
   try {
     const today = new Date().toISOString().slice(0, 10);
     const response = await fetch(
-      "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
+      "https://api.binance.us/api/v3/ticker/price?symbol=BTCUSDT"
     );
     const data = await response.json();
     console.log("data", data);
@@ -29,7 +29,7 @@ const generate = async () => {
 
   if (!price) return;
 
-  fs.appendFileSync("README.md", `\r\n| ${today} | ${price} |`);
+  fs.appendFileSync("README.md", `| ${today} | ${price} |\r\n`);
 };
 
 generate();
