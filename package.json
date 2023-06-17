@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tvqqq/btc-daily#readme",
   "dependencies": {
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^2.6.7",
+    "dotenv": "^16.3.0"
   }
 }

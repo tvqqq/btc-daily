@@ -1,3 +1,4 @@
+require('dotenv').config();
 const fetch = require("node-fetch");
 const fs = require("fs");
 
@@ -30,6 +31,11 @@ const generate = async () => {
   if (!price) return;
 
   fs.appendFileSync("README.md", `| ${today} | ${price} |\r\n`);
+
+  const deno = `${process.env.DENO_URL}?db=${process.env.DATABASE_ID}&today=${price}`;
+  console.log('deno', deno);
+
+  await fetch(deno);
 };
 
 generate();
