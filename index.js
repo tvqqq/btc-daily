@@ -38,4 +38,11 @@ const generate = async () => {
   await fetch(deno);
 };
 
-generate();
+if (require.main === module) {
+  generate();
+}
+
+module.exports = {
+  getPrice,
+  generate
+};
